@@ -6,14 +6,14 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: aks-dep 
+      app: aks-dep
   template:
     metadata:
       labels:
         app: aks-dep
     spec:
       containers:
-       -  name: aks-dep-cont1
-          image: acrdemo1.azure.io/aks-image:v1
-       ports:
-       -  containerPort: 80
+        - name: aks-dep-cont1
+          image: acrdemo1.azurecr.io/aks-image:v1
+          ports:
+            - containerPort: 80
