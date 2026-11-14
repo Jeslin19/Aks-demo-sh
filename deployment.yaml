@@ -11,9 +11,9 @@ spec:
     metadata:
       labels:
         app: aks-dep
-  spec:
-    containers:
-    -  name: aks-dep-cont1
-       image: acrdemo1.azure.io/aks-image:v1
+    spec:
+      containers:
+       -  name: aks-dep-cont1
+          image: acrdemo1.azure.io/aks-image:v1
        ports:
        -  containerPort: 80
